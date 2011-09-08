@@ -541,6 +541,12 @@ exe "hi! Normal"         .s:fmt_none   .s:fg_base0  .s:bg_back
 exe "hi! Comment"        .s:fmt_ital   .s:fg_base01 .s:bg_none
 "       *Comment         any comment
 
+" Added AS3 comment colors; sorry it doesn't match solarized.vim's style!
+" 2011-08-08 Alan MacDougall (alan@paperlesspost.com)
+highlight as3docComment guifg=#AABFAA gui=italic
+highlight as3docCommentKeyword guifg=#AABFAA gui=bold
+highlight as3wingComment guifg=#999999 gui=italic
+
 exe "hi! Constant"       .s:fmt_none   .s:fg_cyan   .s:bg_none
 "       *Constant        any constant
 "        String          a string constant: "this is a string"
