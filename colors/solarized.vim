@@ -543,9 +543,13 @@ exe "hi! Comment"        .s:fmt_ital   .s:fg_base01 .s:bg_none
 
 " Added variable comment colors; sorry it doesn't match solarized.vim's style!
 " 2011-08-08 Alan MacDougall (alan@paperlesspost.com)
-highlight docComment        guifg=#AABFAA gui=italic
+highlight docComment        guifg=#889d88 gui=italic
 highlight docCommentKeyword guifg=#AABFAA gui=bold
 highlight wingComment       guifg=#999999 gui=italic
+
+exe "hi! markdownH1"     .s:fmt_bold   .s:fg_red      .s:bg_none
+exe "hi! markdownH2"     .s:fmt_bold   .s:fg_green    .s:bg_none
+exe "hi! markdownH3"     .s:fmt_bold   .s:fg_yellow   .s:bg_none
 
 exe "hi! Constant"       .s:fmt_none   .s:fg_cyan   .s:bg_none
 "       *Constant        any constant
